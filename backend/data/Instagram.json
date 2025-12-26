@@ -3,6 +3,7 @@
     "campaigns": {
         "a6588e7a-7dca-48cc-bc6f-9bd4382d7842": {
             "name": "Summer Holiday",
+            "location": "South America",
             "metrics": {
                 "impressions": 12399,
                 "clicks": 287,
@@ -48,6 +49,7 @@
         },
         "e1d63f8b-63bf-4f75-81e1-eb02ec87087e": {
             "name": "Winter Offers",
+            "location": "Australia",
             "metrics": {
                 "impressions": 9913,
                 "clicks": 769,
@@ -83,6 +85,7 @@
         },
         "bd639b52-7fd0-4384-808d-267dbe40166c": {
             "name": "Big Billion Days",
+            "location": "Africa",
             "metrics": {
                 "impressions": 7880,
                 "clicks": 939,
@@ -118,6 +121,7 @@
         },
         "e395217a-72f8-43a2-8389-05c8805996d8": {
             "name": "Christmas Holidays Offer",
+            "location": "Europe",
             "metrics": {
                 "impressions": 18740,
                 "clicks": 1249,
@@ -153,6 +157,7 @@
         },
         "ffa0d6c2-d26d-466b-bdfe-46bff5d632a2": {
             "name": "Myntra End Offers",
+            "location": "North America",
             "metrics": {
                 "impressions": 18751,
                 "clicks": 1044,
@@ -188,6 +193,7 @@
         },
         "4bde3d89-573b-4d50-a53e-b9ebf617c58f": {
             "name": "New Offers Camp",
+            "location": "Asia Pacific",
             "metrics": {
                 "impressions": 16422,
                 "clicks": 980,
@@ -223,6 +229,7 @@
         },
         "569d4889-100b-4a64-b3e6-3567b772f617": {
             "name": "End of season sales",
+            "location": "India",
             "metrics": {
                 "impressions": 5331,
                 "clicks": 1139,

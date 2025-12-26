@@ -3,6 +3,7 @@
     "campaigns": {
         "a6588e7a-7dca-48cc-bc6f-9bd4382d7842": {
             "name": "Summer Holiday",
+            "location": "North America",
             "metrics": {
                 "impressions": 18779,
                 "clicks": 434,
@@ -62,6 +63,7 @@
         },
         "e1d63f8b-63bf-4f75-81e1-eb02ec87087e": {
             "name": "Winter Offers",
+            "location": "Europe",
             "metrics": {
                 "impressions": 6921,
                 "clicks": 936,
@@ -97,6 +99,7 @@
         },
         "bd639b52-7fd0-4384-808d-267dbe40166c": {
             "name": "Big Billion Days",
+            "location": "Asia Pacific",
             "metrics": {
                 "impressions": 19318,
                 "clicks": 1118,
@@ -132,6 +135,7 @@
         },
         "4bde3d89-573b-4d50-a53e-b9ebf617c58f": {
             "name": "New Offers Camp",
+            "location": "India",
             "metrics": {
                 "impressions": 5582,
                 "clicks": 261,

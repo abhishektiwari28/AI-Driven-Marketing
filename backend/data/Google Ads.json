@@ -44,7 +44,8 @@
                     "Ad 1": "Active",
                     "Ad 2": "Testing"
                 }
-            }
+            },
+            "location": "Asia Pacific"
         },
         "e1d63f8b-63bf-4f75-81e1-eb02ec87087e": {
             "name": "Winter Offers",
@@ -79,7 +80,8 @@
                     "Ad 1": "Active",
                     "Ad 2": "Testing"
                 }
-            }
+            },
+            "location": "India"
         },
         "bd639b52-7fd0-4384-808d-267dbe40166c": {
             "name": "Big Billion Days",
@@ -114,7 +116,8 @@
                     "Ad 1": "Learning",
                     "Ad 2": "Testing"
                 }
-            }
+            },
+            "location": "Australia"
         },
         "e395217a-72f8-43a2-8389-05c8805996d8": {
             "name": "Christmas Holidays Offer",
@@ -149,7 +152,8 @@
                     "Ad 1": "Active",
                     "Ad 2": "Testing"
                 }
-            }
+            },
+            "location": "Africa"
         },
         "7e6d570e-8c03-43a0-8f2d-8a84a3cb7900": {
             "name": "New Camp",
@@ -184,7 +188,8 @@
                     "Ad 1": "Active",
                     "Ad 2": "Testing"
                 }
-            }
+            },
+            "location": "Africa"
         },
         "569d4889-100b-4a64-b3e6-3567b772f617": {
             "name": "End of season sales",
@@ -219,7 +224,8 @@
                     "Ad 1": "Winner",
                     "Ad 2": "Testing"
                 }
-            }
+            },
+            "location": "India"
         }
     }
 }
