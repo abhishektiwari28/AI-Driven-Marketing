@@ -1,0 +1,225 @@
+{
+    "platform": "Google Ads",
+    "campaigns": {
+        "a6588e7a-7dca-48cc-bc6f-9bd4382d7842": {
+            "name": "Summer Holiday",
+            "metrics": {
+                "impressions": 9436,
+                "clicks": 932,
+                "cost": 720.99,
+                "conversions": 134,
+                "ctr": 2.55,
+                "cpc": 1.1,
+                "cpm": 76.41,
+                "conversion_rate": 14.38,
+                "roi": 1.61,
+                "sentiment_score": 0.5,
+                "forecast_data": {
+                    "projected_roi": 3.7,
+                    "projected_conversions": 281,
+                    "confidence_score": "91%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 1000.0,
+                "target_audience": 200,
+                "audience_insight": {
+                    "primary_segment": "Gamers",
+                    "engagement_depth": "High",
+                    "gender": {
+                        "Male": 70,
+                        "Female": 30
+                    },
+                    "age": {
+                        "18-24": 40,
+                        "25-34": 35,
+                        "35-44": 20,
+                        "45+": 5
+                    }
+                },
+                "detailed_stats": {
+                    "Ad 1": "Active",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "e1d63f8b-63bf-4f75-81e1-eb02ec87087e": {
+            "name": "Winter Offers",
+            "metrics": {
+                "impressions": 16122,
+                "clicks": 753,
+                "cost": 694.23,
+                "conversions": 23,
+                "ctr": 1.19,
+                "cpc": 2.18,
+                "cpm": 60.67,
+                "conversion_rate": 17.85,
+                "roi": 2.15,
+                "sentiment_score": 0.84,
+                "forecast_data": {
+                    "projected_roi": 4.5,
+                    "projected_conversions": 111,
+                    "confidence_score": "81%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 10000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Professionals",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Active",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "bd639b52-7fd0-4384-808d-267dbe40166c": {
+            "name": "Big Billion Days",
+            "metrics": {
+                "impressions": 15628,
+                "clicks": 1173,
+                "cost": 602.94,
+                "conversions": 118,
+                "ctr": 3.26,
+                "cpc": 1.43,
+                "cpm": 70.68,
+                "conversion_rate": 21.59,
+                "roi": 3.16,
+                "sentiment_score": 0.83,
+                "forecast_data": {
+                    "projected_roi": 3.2,
+                    "projected_conversions": 200,
+                    "confidence_score": "92%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 50000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Fashionistas",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Learning",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "e395217a-72f8-43a2-8389-05c8805996d8": {
+            "name": "Christmas Holidays Offer",
+            "metrics": {
+                "impressions": 9783,
+                "clicks": 1250,
+                "cost": 944.32,
+                "conversions": 47,
+                "ctr": 3.19,
+                "cpc": 1.57,
+                "cpm": 24.08,
+                "conversion_rate": 9.54,
+                "roi": 2.17,
+                "sentiment_score": 0.5,
+                "forecast_data": {
+                    "projected_roi": 3.3,
+                    "projected_conversions": 134,
+                    "confidence_score": "78%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 10000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Fashionistas",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Active",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "7e6d570e-8c03-43a0-8f2d-8a84a3cb7900": {
+            "name": "New Camp",
+            "metrics": {
+                "impressions": 8715,
+                "clicks": 409,
+                "cost": 923.94,
+                "conversions": 96,
+                "ctr": 3.42,
+                "cpc": 1.18,
+                "cpm": 29.9,
+                "conversion_rate": 7.55,
+                "roi": 1.72,
+                "sentiment_score": 0.58,
+                "forecast_data": {
+                    "projected_roi": 3.1,
+                    "projected_conversions": 458,
+                    "confidence_score": "79%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 30000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Professionals",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Active",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "569d4889-100b-4a64-b3e6-3567b772f617": {
+            "name": "End of season sales",
+            "metrics": {
+                "impressions": 18580,
+                "clicks": 231,
+                "cost": 289.05,
+                "conversions": 53,
+                "ctr": 3.46,
+                "cpc": 1.19,
+                "cpm": 45.76,
+                "conversion_rate": 18.49,
+                "roi": 3.33,
+                "sentiment_score": 0.64,
+                "forecast_data": {
+                    "projected_roi": 3.1,
+                    "projected_conversions": 98,
+                    "confidence_score": "92%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 70000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Professionals",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Winner",
+                    "Ad 2": "Testing"
+                }
+            }
+        }
+    }
+}

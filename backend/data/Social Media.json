@@ -1,0 +1,38 @@
+{
+    "platform": "Social Media",
+    "campaigns": {
+        "24a92feb-be80-4cb1-a66a-f8bafb2c811a": {
+            "name": "New Product Launch",
+            "metrics": {
+                "impressions": 14006,
+                "clicks": 632,
+                "cost": 662.31,
+                "conversions": 64,
+                "ctr": 1.2,
+                "cpc": 2.36,
+                "roi": 3.38,
+                "sentiment_score": 0.8,
+                "forecast_data": {
+                    "projected_roi": 2.4,
+                    "projected_conversions": 279,
+                    "confidence_score": "68%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 60000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Professionals",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Learning",
+                    "Ad 2": "Testing"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "platform": "Facebook",
+    "campaigns": {
+        "a6588e7a-7dca-48cc-bc6f-9bd4382d7842": {
+            "name": "Summer Holiday",
+            "metrics": {
+                "impressions": 18779,
+                "clicks": 434,
+                "cost": 989.48,
+                "conversions": 95,
+                "ctr": 3.28,
+                "cpc": 1.45,
+                "cpm": 52.67,
+                "conversion_rate": 21.89,
+                "roi": 2.16,
+                "sentiment_score": 0.45,
+                "forecast_data": {
+                    "projected_roi": 1.6,
+                    "projected_conversions": 347,
+                    "confidence_score": "66%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 1000.0,
+                "target_audience": 200,
+                "audience_insight": {
+                    "primary_segment": "Tech Enthusiasts",
+                    "engagement_depth": "High",
+                    "gender": {
+                        "Male": 65,
+                        "Female": 35
+                    },
+                    "age": {
+                        "18-24": 15,
+                        "25-34": 45,
+                        "35-44": 25,
+                        "45+": 15
+                    }
+                },
+                "detailed_stats": {
+                    "Ad 1": "Winner",
+                    "Ad 2": "Testing"
+                },
+                "ai_insights": {
+                    "cost_reduction": {
+                        "action": "Reduce Facebook spend by 35% and pause low-CTR segments",
+                        "summary": "Facebook campaigns show elevated CPC costs with some ad sets performing below 1.5x ROI threshold. Pausing underperforming segments could save \u00e2\u201a\u00b9374 weekly.",
+                        "winning_segment": "High-Engagement Audiences",
+                        "sentiment_leader": "Facebook"
+                    },
+                    "results_optimization": {
+                        "action": "Increase Facebook budget by 40% and expand top-performing ad sets",
+                        "summary": "Facebook demonstrates superior ROI performance with 2 high-yield segments identified. Increasing budget allocation by 40% could capture additional \u00e2\u201a\u00b9747 in revenue.",
+                        "winning_segment": "Facebook Lookalike Audiences",
+                        "sentiment_leader": "Facebook"
+                    }
+                }
+            }
+        },
+        "e1d63f8b-63bf-4f75-81e1-eb02ec87087e": {
+            "name": "Winter Offers",
+            "metrics": {
+                "impressions": 6921,
+                "clicks": 936,
+                "cost": 714.18,
+                "conversions": 43,
+                "ctr": 1.2,
+                "cpc": 1.67,
+                "cpm": 59.07,
+                "conversion_rate": 12.57,
+                "roi": 3.98,
+                "sentiment_score": 0.56,
+                "forecast_data": {
+                    "projected_roi": 3.1,
+                    "projected_conversions": 129,
+                    "confidence_score": "71%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 10000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Gamers",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Winner",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "bd639b52-7fd0-4384-808d-267dbe40166c": {
+            "name": "Big Billion Days",
+            "metrics": {
+                "impressions": 19318,
+                "clicks": 1118,
+                "cost": 678.49,
+                "conversions": 141,
+                "ctr": 1.47,
+                "cpc": 2.12,
+                "cpm": 46.25,
+                "conversion_rate": 8.38,
+                "roi": 3.98,
+                "sentiment_score": 0.62,
+                "forecast_data": {
+                    "projected_roi": 2.7,
+                    "projected_conversions": 211,
+                    "confidence_score": "71%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 50000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Gamers",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Active",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "4bde3d89-573b-4d50-a53e-b9ebf617c58f": {
+            "name": "New Offers Camp",
+            "metrics": {
+                "impressions": 5582,
+                "clicks": 261,
+                "cost": 839.05,
+                "conversions": 101,
+                "ctr": 3.4,
+                "cpc": 1.58,
+                "cpm": 26.66,
+                "conversion_rate": 9.16,
+                "roi": 3.69,
+                "sentiment_score": 0.59,
+                "forecast_data": {
+                    "projected_roi": 1.8,
+                    "projected_conversions": 131,
+                    "confidence_score": "83%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 50000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Tech Enthusiasts",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Active",
+                    "Ad 2": "Testing"
+                }
+            }
+        }
+    }
+}

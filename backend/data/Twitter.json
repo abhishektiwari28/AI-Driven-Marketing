@@ -1,0 +1,110 @@
+{
+    "platform": "Twitter",
+    "campaigns": {
+        "e1d63f8b-63bf-4f75-81e1-eb02ec87087e": {
+            "name": "Winter Offers",
+            "metrics": {
+                "impressions": 18862,
+                "clicks": 1035,
+                "cost": 630.02,
+                "conversions": 104,
+                "ctr": 1.73,
+                "cpc": 1.19,
+                "cpm": 62.9,
+                "conversion_rate": 22.8,
+                "roi": 1.85,
+                "sentiment_score": 0.87,
+                "forecast_data": {
+                    "projected_roi": 1.7,
+                    "projected_conversions": 439,
+                    "confidence_score": "73%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 10000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Gamers",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Active",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "bd639b52-7fd0-4384-808d-267dbe40166c": {
+            "name": "Big Billion Days",
+            "metrics": {
+                "impressions": 9518,
+                "clicks": 513,
+                "cost": 644.51,
+                "conversions": 104,
+                "ctr": 1.22,
+                "cpc": 2.43,
+                "cpm": 37.33,
+                "conversion_rate": 14.94,
+                "roi": 2.35,
+                "sentiment_score": 0.44,
+                "forecast_data": {
+                    "projected_roi": 1.9,
+                    "projected_conversions": 462,
+                    "confidence_score": "94%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 50000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Tech Enthusiasts",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Learning",
+                    "Ad 2": "Testing"
+                }
+            }
+        },
+        "76602ba2-f709-4693-a0d0-6a6c5337eb6b": {
+            "name": "Offers",
+            "metrics": {
+                "impressions": 17355,
+                "clicks": 1200,
+                "cost": 340.11,
+                "conversions": 124,
+                "ctr": 1.93,
+                "cpc": 2.04,
+                "cpm": 26.72,
+                "conversion_rate": 18.03,
+                "roi": 1.92,
+                "sentiment_score": 0.74,
+                "forecast_data": {
+                    "projected_roi": 2.5,
+                    "projected_conversions": 123,
+                    "confidence_score": "81%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 50000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Gamers",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Ad 1": "Active",
+                    "Ad 2": "Testing"
+                }
+            }
+        }
+    }
+}

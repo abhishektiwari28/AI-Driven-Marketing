@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --tooltip-bg: #ffffff;
+    --tooltip-border: #e5e7eb;
+    --tooltip-text: #000000;
+    --chart-grid: #f3f4f6;
+    --chart-text: #374151;
+    --chart-legend: #111827;
+    --chart-number: #000000;
+  }
+  
+  body {
+    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 antialiased font-sans selection:bg-indigo-100 dark:selection:bg-indigo-800 selection:text-indigo-900 dark:selection:text-indigo-100;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  html {
+    @apply bg-gray-50 dark:bg-gray-900;
+  }
+  
+  .dark {
+    color-scheme: dark;
+    --tooltip-bg: #374151;
+    --tooltip-border: #4b5563;
+    --tooltip-text: #f9fafb;
+    --chart-grid: #4b5563;
+    --chart-text: #e5e7eb;
+    --chart-legend: #f9fafb;
+    --chart-number: #ffffff;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white dark:bg-gray-800/95 border border-gray-200 dark:border-gray-700/60 rounded-xl shadow-sm shadow-gray-200/50 dark:shadow-black/20 transition-all duration-300 hover:shadow-md dark:hover:shadow-black/30;
+  }
+
+  .glass-panel {
+    @apply bg-white/95 dark:bg-gray-800/95 border-r border-gray-200 dark:border-gray-700/60 backdrop-blur-lg;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-400 text-white rounded-lg font-semibold transition-all duration-200 shadow-lg shadow-indigo-600/25 dark:shadow-indigo-500/25 hover:shadow-xl active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-white dark:bg-gray-700/80 hover:bg-gray-50 dark:hover:bg-gray-600/80 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white rounded-lg font-semibold transition-all duration-200 border border-gray-200 dark:border-gray-600/60 hover:border-gray-300 dark:hover:border-gray-500/60 shadow-sm hover:shadow-md active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  /* Theme-aware text colors */
+  .text-primary {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+  
+  .text-secondary {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  
+  .text-muted {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+  
+  /* Theme-aware backgrounds */
+  .bg-card {
+    @apply bg-white dark:bg-gray-800;
+  }
+  
+  .bg-surface {
+    @apply bg-gray-50 dark:bg-gray-900;
+  }
+  
+  /* Chart and graph text styling */
+  .recharts-text {
+    fill: var(--chart-text) !important;
+  }
+  
+  .recharts-legend-item-text {
+    color: var(--chart-legend) !important;
+  }
+  
+  .recharts-cartesian-axis-tick-value {
+    fill: var(--chart-text) !important;
+  }
+  
+  .recharts-tooltip-wrapper {
+    color: var(--tooltip-text) !important;
+  }
+  
+  /* Number and metric styling */
+  .metric-number {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+  
+  .chart-label {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  
+  /* Theme-aware borders */
+  .border-default {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+  
+  .border-light {
+    @apply border-gray-100 dark:border-gray-800;
+  }
+}
+
+/* Custom Scrollbar for release-ready look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-50 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full hover:bg-gray-400 dark:hover:bg-gray-500 transition-colors;
+}
+
+/* Professional Gradients */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-teal-600 dark:from-indigo-400 dark:to-teal-400;
+}

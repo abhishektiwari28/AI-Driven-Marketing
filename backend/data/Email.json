@@ -1,0 +1,293 @@
+{
+    "platform": "Email",
+    "campaigns": {
+        "e1d63f8b-63bf-4f75-81e1-eb02ec87087e": {
+            "name": "Winter Offers",
+            "metrics": {
+                "impressions": 3324,
+                "clicks": 416,
+                "cost": 497.78,
+                "conversions": 20,
+                "ctr": 2.15,
+                "cpc": 1.23,
+                "cpm": 144.63,
+                "conversion_rate": 13.51,
+                "roi": 2.47,
+                "sentiment_score": 0.86,
+                "forecast_data": {
+                    "projected_roi": 3.5,
+                    "projected_conversions": 399,
+                    "confidence_score": "86%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 10000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Loyal",
+                    "top_region": "Europe",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Open Rate": "20%",
+                    "Click Rate": "8%"
+                }
+            }
+        },
+        "bd639b52-7fd0-4384-808d-267dbe40166c": {
+            "name": "Big Billion Days",
+            "metrics": {
+                "impressions": 3426,
+                "clicks": 298,
+                "cost": 402.53,
+                "conversions": 17,
+                "ctr": 2.71,
+                "cpc": 1.88,
+                "cpm": 81.86,
+                "conversion_rate": 9.89,
+                "roi": 2.02,
+                "sentiment_score": 0.92,
+                "forecast_data": {
+                    "projected_roi": 2.7,
+                    "projected_conversions": 309,
+                    "confidence_score": "87%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 50000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Loyal",
+                    "top_region": "Global",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Open Rate": "31%",
+                    "Click Rate": "6%"
+                }
+            }
+        },
+        "e395217a-72f8-43a2-8389-05c8805996d8": {
+            "name": "Christmas Holidays Offer",
+            "metrics": {
+                "impressions": 1668,
+                "clicks": 348,
+                "cost": 239.63,
+                "conversions": 30,
+                "ctr": 2.5,
+                "cpc": 1.11,
+                "cpm": 129.81,
+                "conversion_rate": 16.52,
+                "roi": 3.07,
+                "sentiment_score": 0.87,
+                "forecast_data": {
+                    "projected_roi": 1.6,
+                    "projected_conversions": 328,
+                    "confidence_score": "91%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 10000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Loyal",
+                    "top_region": "North America",
+                    "engagement_depth": "Low"
+                },
+                "detailed_stats": {
+                    "Open Rate": "22%",
+                    "Click Rate": "3%"
+                }
+            }
+        },
+        "ffa0d6c2-d26d-466b-bdfe-46bff5d632a2": {
+            "name": "Myntra End Offers",
+            "metrics": {
+                "impressions": 1972,
+                "clicks": 513,
+                "cost": 319.17,
+                "conversions": 27,
+                "ctr": 3.95,
+                "cpc": 1.44,
+                "cpm": 90.98,
+                "conversion_rate": 9.61,
+                "roi": 1.56,
+                "sentiment_score": 0.71,
+                "forecast_data": {
+                    "projected_roi": 2.4,
+                    "projected_conversions": 453,
+                    "confidence_score": "89%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 5000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "Loyal",
+                    "top_region": "Asia",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Open Rate": "27%",
+                    "Click Rate": "7%"
+                }
+            }
+        },
+        "7e6d570e-8c03-43a0-8f2d-8a84a3cb7900": {
+            "name": "New Camp",
+            "metrics": {
+                "impressions": 2260,
+                "clicks": 222,
+                "cost": 295.45,
+                "conversions": 22,
+                "ctr": 4.27,
+                "cpc": 0.56,
+                "cpm": 83.28,
+                "conversion_rate": 15.11,
+                "roi": 1.52,
+                "sentiment_score": 0.8,
+                "forecast_data": {
+                    "projected_roi": 3.8,
+                    "projected_conversions": 110,
+                    "confidence_score": "75%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 30000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "At-Risk",
+                    "top_region": "North America",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Open Rate": "30%",
+                    "Click Rate": "5%"
+                }
+            }
+        },
+        "4bde3d89-573b-4d50-a53e-b9ebf617c58f": {
+            "name": "New Offers Camp",
+            "metrics": {
+                "impressions": 1454,
+                "clicks": 262,
+                "cost": 416.32,
+                "conversions": 45,
+                "ctr": 2.55,
+                "cpc": 0.93,
+                "cpm": 69.78,
+                "conversion_rate": 10.85,
+                "roi": 1.28,
+                "sentiment_score": 0.77,
+                "forecast_data": {
+                    "projected_roi": 3.0,
+                    "projected_conversions": 490,
+                    "confidence_score": "65%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 50000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "New",
+                    "top_region": "Global",
+                    "engagement_depth": "High"
+                },
+                "detailed_stats": {
+                    "Open Rate": "29%",
+                    "Click Rate": "6%"
+                }
+            }
+        },
+        "569d4889-100b-4a64-b3e6-3567b772f617": {
+            "name": "End of season sales",
+            "metrics": {
+                "impressions": 1386,
+                "clicks": 668,
+                "cost": 266.76,
+                "conversions": 40,
+                "ctr": 2.19,
+                "cpc": 0.77,
+                "cpm": 119.96,
+                "conversion_rate": 19.8,
+                "roi": 1.71,
+                "sentiment_score": 0.7,
+                "forecast_data": {
+                    "projected_roi": 2.3,
+                    "projected_conversions": 306,
+                    "confidence_score": "69%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 70000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "At-Risk",
+                    "top_region": "Global",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Open Rate": "23%",
+                    "Click Rate": "3%"
+                }
+            }
+        },
+        "76602ba2-f709-4693-a0d0-6a6c5337eb6b": {
+            "name": "Offers",
+            "metrics": {
+                "impressions": 4598,
+                "clicks": 474,
+                "cost": 312.66,
+                "conversions": 27,
+                "ctr": 4.5,
+                "cpc": 1.88,
+                "cpm": 58.57,
+                "conversion_rate": 8.21,
+                "roi": 1.54,
+                "sentiment_score": 0.68,
+                "forecast_data": {
+                    "projected_roi": 4.1,
+                    "projected_conversions": 369,
+                    "confidence_score": "76%"
+                },
+                "schedule_data": {
+                    "duration_days": 30,
+                    "next_run": "",
+                    "frequency": "Daily"
+                },
+                "budget": 50000.0,
+                "target_audience": 10000,
+                "audience_insight": {
+                    "primary_segment": "At-Risk",
+                    "top_region": "North America",
+                    "engagement_depth": "Medium"
+                },
+                "detailed_stats": {
+                    "Open Rate": "34%",
+                    "Click Rate": "2%"
+                }
+            }
+        }
+    }
+}
