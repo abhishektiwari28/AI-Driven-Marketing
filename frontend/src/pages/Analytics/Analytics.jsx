@@ -200,11 +200,11 @@ const Analytics = () => {
                     </div>
                 </div>
                 
-                <div className="h-[500px] rounded-xl overflow-hidden border border-blue-200 dark:border-blue-700">
+                <div className="h-[500px] rounded-xl overflow-hidden border border-blue-200 dark:border-blue-700 relative z-10">
                     <MapContainer
                         center={[20, 0]}
                         zoom={2}
-                        style={{ height: '100%', width: '100%' }}
+                        style={{ height: '100%', width: '100%', zIndex: 1 }}
                         zoomControl={true}
                         scrollWheelZoom={true}
                     >
