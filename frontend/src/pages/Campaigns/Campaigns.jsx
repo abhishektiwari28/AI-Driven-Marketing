@@ -223,7 +223,7 @@ const Campaigns = () => {
                     onClick={openCreateModal}
                     className="btn-primary"
                 >
-                    <Plus className="w-5 h-5 mr-2" /> Create Sequence
+                    <Plus className="w-5 h-5 mr-2" /> Initialize New Campaign
                 </button>
             </div>
 

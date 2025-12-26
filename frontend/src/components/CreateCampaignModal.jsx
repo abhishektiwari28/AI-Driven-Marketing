@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Share2, Target, CreditCard, Loader2 } from 'lucide-react';
+import { X, Share2, Target, CreditCard, Loader2, Sparkles } from 'lucide-react';
 import axios from 'axios';
 
 const API_BASE_URL = 'http://localhost:8000/api';
@@ -242,9 +242,10 @@ const CreateCampaignModal = ({ isOpen, onClose, onSuccess, initialData = null })
                                         alert('Please fill Campaign Name, Objective, and Target Audience first');
                                     }
                                 }}
-                                className="text-xs text-indigo-600 hover:text-indigo-700 font-bold"
+                                className="relative text-xs text-white bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 hover:from-purple-600 hover:via-indigo-600 hover:to-blue-600 font-bold flex items-center gap-1 px-3 py-2 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden group"
                             >
-                                Generate AI Strategy
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                                <Sparkles className="w-3 h-3 animate-pulse" /> Generate AI Strategy
                             </button>
                         </div>
                         <textarea
