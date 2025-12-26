@@ -95,16 +95,14 @@ const AIAssistant = () => {
     const [showQuickActionsModal, setShowQuickActionsModal] = useState(false);
     const [showTrendingModal, setShowTrendingModal] = useState(false);
     const [selectedAction, setSelectedAction] = useState(null);
+    const [recordingLines, setRecordingLines] = useState([]);
+    const recordingIntervalRef = useRef(null);
     const messagesEndRef = useRef(null);
     const recognitionRef = useRef(null);
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
     };
-
-    useEffect(() => {
-        scrollToBottom();
-    }, [messages]);
 
     // Voice Recognition Setup
     useEffect(() => {
@@ -118,10 +116,37 @@ const AIAssistant = () => {
                 const transcript = event.results[0][0].transcript;
                 setInputMessage(transcript);
                 setIsListening(false);
+                setRecordingLines([]);
+                if (recordingIntervalRef.current) {
+                    clearInterval(recordingIntervalRef.current);
+                    recordingIntervalRef.current = null;
+                }
+                // Auto-send the voice message
+                setTimeout(() => {
+                    if (transcript.trim()) {
+                        const newMessage = {
+                            id: Date.now(),
+                            message: transcript,
+                            isAI: false,
+                            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+                        };
+                        setMessages(prev => [...prev, newMessage]);
+                        setInputMessage('');
+                        setIsTyping(true);
+                        
+                        // Process AI response
+                        processAIResponse(transcript);
+                    }
+                }, 100);
             };
             
             recognitionRef.current.onerror = () => {
                 setIsListening(false);
+                setRecordingLines([]);
+                if (recordingIntervalRef.current) {
+                    clearInterval(recordingIntervalRef.current);
+                    recordingIntervalRef.current = null;
+                }
             };
         }
     }, []);
@@ -143,30 +168,26 @@ const AIAssistant = () => {
         if (isListening) {
             recognitionRef.current?.stop();
             setIsListening(false);
+            setRecordingLines([]);
+            if (recordingIntervalRef.current) {
+                clearInterval(recordingIntervalRef.current);
+                recordingIntervalRef.current = null;
+            }
         } else {
             recognitionRef.current?.start();
             setIsListening(true);
+            // Start recording animation
+            recordingIntervalRef.current = setInterval(() => {
+                setRecordingLines(Array.from({length: 5}, () => Math.random() * 100));
+            }, 150);
         }
     };
 
-    const sendMessage = () => {
-        if (!inputMessage.trim()) return;
-        
-        const newMessage = {
-            id: Date.now(),
-            message: inputMessage,
-            isAI: false,
-            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-        };
-        
-        setMessages(prev => [...prev, newMessage]);
-        setInputMessage('');
-        setIsTyping(true);
-        
+    const processAIResponse = (userInput) => {
         // Simulate AI response with more variety
         setTimeout(() => {
             let aiResponse = "";
-            const userMsg = inputMessage.toLowerCase();
+            const userMsg = userInput.toLowerCase();
             
             // Context-aware responses based on user input
             if (userMsg.includes('platform') && (userMsg.includes('loss') || userMsg.includes('losing') || userMsg.includes('causing'))) {
@@ -228,12 +249,25 @@ const AIAssistant = () => {
             };
             setMessages(prev => [...prev, aiMessage]);
             setIsTyping(false);
-            
-            // Auto-speak AI responses if voice is enabled
-            if (voiceEnabled) {
-                setTimeout(() => speakMessage(aiResponse), 500);
-            }
         }, 1500);
+    };
+
+    const sendMessage = () => {
+        if (!inputMessage.trim()) return;
+        
+        const newMessage = {
+            id: Date.now(),
+            message: inputMessage,
+            isAI: false,
+            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        };
+        
+        setMessages(prev => [...prev, newMessage]);
+        const currentInput = inputMessage;
+        setInputMessage('');
+        setIsTyping(true);
+        
+        processAIResponse(currentInput);
     };
 
     // Download Report Function
@@ -457,7 +491,7 @@ const AIAssistant = () => {
                         </div>
                         <button 
                             onClick={toggleVoiceInput}
-                            className={`p-3 rounded-xl transition-colors ${
+                            className={`p-3 rounded-xl transition-all duration-300 flex items-center gap-2 ${
                                 isListening 
                                     ? 'bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 animate-pulse' 
                                     : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-600 dark:text-gray-400'
@@ -465,17 +499,40 @@ const AIAssistant = () => {
                             title={isListening ? 'Stop listening' : 'Start voice input'}
                         >
                             {isListening ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
+                            {isListening && (
+                                <div className="flex items-center gap-1">
+                                    {recordingLines.map((height, index) => (
+                                        <div 
+                                            key={index}
+                                            className="w-1 bg-red-500 rounded-full transition-all duration-150"
+                                            style={{ height: `${Math.max(4, height * 0.2)}px` }}
+                                        />
+                                    ))}
+                                </div>
+                            )}
                         </button>
                         <button 
-                            onClick={() => setVoiceEnabled(!voiceEnabled)}
+                            onClick={() => {
+                                if (isSpeaking) {
+                                    speechSynthesis.cancel();
+                                    setIsSpeaking(false);
+                                } else {
+                                    if (messages.length > 0) {
+                                        const lastAIMessage = [...messages].reverse().find(msg => msg.isAI);
+                                        if (lastAIMessage) {
+                                            speakMessage(lastAIMessage.message);
+                                        }
+                                    }
+                                }
+                            }}
                             className={`p-3 rounded-xl transition-colors ${
-                                voiceEnabled 
-                                    ? 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400' 
-                                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400'
+                                isSpeaking 
+                                    ? 'bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400' 
+                                    : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-600 dark:text-gray-400'
                             }`}
-                            title={voiceEnabled ? 'Voice responses ON' : 'Voice responses OFF'}
+                            title={isSpeaking ? 'Stop speaking' : 'Speak last AI response'}
                         >
-                            {voiceEnabled ? <Volume2 className="w-5 h-5" /> : <VolumeX className="w-5 h-5" />}
+                            {isSpeaking ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
                         </button>
                         <button 
                             onClick={sendMessage}
