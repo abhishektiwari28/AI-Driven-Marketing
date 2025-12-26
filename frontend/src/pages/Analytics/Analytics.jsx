@@ -30,47 +30,15 @@ const Analytics = () => {
     useEffect(() => {
         const fetchRealTimeData = async () => {
             try {
-                const platforms = ['Instagram', 'Facebook', 'Twitter', 'Google Ads', 'Email'];
-                const platformPromises = platforms.map(async (platform) => {
-                    try {
-                        const response = await axios.get(`/api/platforms/${platform}/stats`);
-                        return response.data;
-                    } catch (error) {
-                        return null;
-                    }
-                });
+                const response = await axios.get('/api/analytics/global-data');
+                const locationData = response.data;
                 
-                const results = await Promise.all(platformPromises);
-                const validResults = results.filter(result => result !== null);
+                // Map locations to coordinates
+                const regions = locationData.map(location => ({
+                    ...location,
+                    ...locationCoords[location.name]
+                })).filter(region => region.lat && region.lng);
                 
-                // Aggregate data by location
-                const locationData = {};
-                
-                validResults.forEach(platformData => {
-                    if (platformData.campaigns) {
-                        platformData.campaigns.forEach(campaign => {
-                            const location = campaign.location || 'Unknown';
-                            if (!locationData[location]) {
-                                locationData[location] = {
-                                    name: location,
-                                    users: 0,
-                                    conversions: 0,
-                                    clicks: 0,
-                                    impressions: 0,
-                                    ...locationCoords[location]
-                                };
-                            }
-                            
-                            const metrics = campaign.metrics || {};
-                            locationData[location].users += Math.floor(metrics.clicks || 0);
-                            locationData[location].conversions += Math.floor(metrics.conversions || 0);
-                            locationData[location].clicks += Math.floor(metrics.clicks || 0);
-                            locationData[location].impressions += Math.floor(metrics.impressions || 0);
-                        });
-                    }
-                });
-                
-                const regions = Object.values(locationData).filter(region => region.lat && region.lng);
                 setRealTimeData(regions);
                 
                 // Calculate stats

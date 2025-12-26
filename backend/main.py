@@ -292,26 +292,51 @@ async def get_dashboard_trends(campaign_id: Optional[str] = None, days: int = 30
 async def get_dashboard_revenue_trajectory(campaign_id: Optional[str] = None, days: int = 30):
     return dashboard_service.get_revenue_trajectory(campaign_id, days)
 
-@app.get("/api/platforms/all/stats")
-def get_all_platforms_stats():
-    """Get aggregated stats for all platforms"""
+@app.get("/api/analytics/global-data")
+def get_analytics_global_data():
+    """Get aggregated campaign data by location for analytics map"""
     try:
-        platforms = ["Instagram", "Facebook", "Twitter", "Google Ads", "Email"]
-        all_stats = []
+        import json
+        import os
+        
+        platforms = ["Facebook", "Instagram", "Twitter", "Google Ads", "Email"]
+        location_data = {}
         
         for platform in platforms:
-            try:
-                stats = PlatformAPI.get_platform_aggregate_stats(platform)
-                print(f"Stats for {platform}: {stats}")
-                all_stats.append(stats)
-            except Exception as e:
-                print(f"Error getting stats for {platform}: {e}")
-                continue
+            file_path = os.path.join("data", f"{platform}.json")
+            if os.path.exists(file_path):
+                with open(file_path, 'r') as f:
+                    data = json.load(f)
+                
+                for campaign_id, campaign in data.get("campaigns", {}).items():
+                    location = campaign.get("location", "Unknown")
+                    metrics = campaign.get("metrics", {})
+                    
+                    if location not in location_data:
+                        location_data[location] = {
+                            "name": location,
+                            "users": 0,
+                            "conversions": 0,
+                            "clicks": 0,
+                            "impressions": 0,
+                            "campaigns": []
+                        }
+                    
+                    # Aggregate metrics
+                    location_data[location]["users"] += int(metrics.get("clicks", 0))
+                    location_data[location]["conversions"] += int(metrics.get("conversions", 0))
+                    location_data[location]["clicks"] += int(metrics.get("clicks", 0))
+                    location_data[location]["impressions"] += int(metrics.get("impressions", 0))
+                    
+                    # Add campaign info
+                    location_data[location]["campaigns"].append({
+                        "name": campaign.get("name"),
+                        "platform": platform,
+                        "metrics": metrics
+                    })
         
-        print(f"Final all_stats: {all_stats}")
-        return all_stats
+        return list(location_data.values())
     except Exception as e:
-        print(f"Error in get_all_platforms_stats: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
