@@ -59,3 +59,4 @@ An AI-driven co-pilot for digital marketing that moves beyond static dashboards 
 # updates
 
 # all good
+# full fuctional
